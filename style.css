@@ -1,0 +1,191 @@
+:root {
+    --bg-color: #333;
+    --text-color: white;
+    --card-bg: #444;
+    --button-bg: #007BFF;
+    --button-bg-alt: #28A745;
+    --input-bg: #555;
+    --input-border: #666;
+  }
+
+  [data-theme="light"] {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --card-bg: #fff;
+    --button-bg: #007BFF;
+    --button-bg-alt: #28A745;
+    --input-bg: #fff;
+    --input-border: #ccc;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+  }
+
+  header .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header img {
+    height: 50px;
+  }
+
+  header a {
+    color: var(--button-bg);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  header button {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  main h1 {
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+    transition: background 0.3s;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    margin: 15px 0 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card .buttons {
+    margin-top: 15px;
+  }
+
+  .card .buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: var(--button-bg);
+    font-size: 14px;
+  }
+
+  .card .buttons a:nth-child(2) {
+    background: var(--button-bg-alt);
+  }
+
+  .suggestions {
+    margin-top: 40px;
+  }
+
+  .suggestions input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .suggestions button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--button-bg);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .suggestions p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--card-bg);
+    font-size: 14px;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer a {
+    color: var(--button-bg);
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  .curso-indisponivel{
+    opacity: 0.2;
+  }
+  
+  .curso-indisponivel a:hover{
+    cursor:not-allowed;
+  }
+  
+

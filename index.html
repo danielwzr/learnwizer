@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine de Cursos - Learnwizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<header>
+  <div class="container">
+    <img src="logo.png" alt="Logomarca">
+    <div>
+      <a href="https://www.youtube.com" target="_blank">YouTube</a>
+      <a href="https://www.udemy.com" target="_blank">Udemy</a>
+      <button id="theme-toggle">Alternar Tema</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Conteúdo disponível</h1>
+    <div class="cards">
+      <!-- Cards dos cursos -->
+      <div class="card">
+        <img src="informatica.jpg" alt="Informática Básica">
+        <h3>Informática Básica</h3>
+        <p>Aprenda o básico de informática para uso pessoal e profissional.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="logica.jpg" alt="Lógica de Programação">
+        <h3>Lógica de Programação</h3>
+        <p>Entenda os fundamentos da lógica para aprender a programar.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="desenvolvimento.jpg" alt="Etapas de Desenvolvimento de Software">
+        <h3>Etapas de Desenvolvimento de Software</h3>
+        <p>Conheça o ciclo completo do desenvolvimento de software.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="web.jpg" alt="Programação Web Básica">
+        <h3>Programação Web Básica</h3>
+        <p>Introdução ao desenvolvimento de sites e aplicações web.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="design.jpg" alt="Design System no Figma">
+        <h3>Design System no Figma</h3>
+        <p>Crie e gerencie sistemas de design utilizando o Figma.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="dados.jpg" alt="Análise de Dados">
+        <h3>Análise de Dados</h3>
+        <p>Descubra como trabalhar com análise de dados e visualização.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="jogos.jpg" alt="Programação de Jogos 2D">
+        <h3>Programação de Jogos 2D</h3>
+        <p>Aprenda a criar jogos simples e divertidos em 2D.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+      <div class="card curso-indisponivel">
+        <img src="blockchain.jpg" alt="Blockchain Wallets e Criptomoedas">
+        <h3>Blockchain Wallets e Criptomoedas</h3>
+        <p>Entenda o funcionamento das carteiras digitais e criptomoedas.</p>
+        <div class="buttons">
+          <a href="#">Baixar Slides</a>
+          <a href="#">Acessar Curso</a>
+        </div>
+      </div>
+      <!-- Repetir outros cards -->
+    </div>
+
+    <div class="suggestions">
+      <input type="text" placeholder="Sugira um novo curso ou conteúdo...">
+      <button>Enviar</button>
+      <h3><i>"Uma boa educação é sinônimo de evolução."</i></h3>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>Desenvolvido por Daniel Andrade Faria</div>
+    <div>Learnwizer © 2025</div>
+    <div>
+        <a href="https://www.youtube.com/@DanielAndrade-yh9lc" target="_blank">YouTube</a>
+        <a href="https://www.udemy.com/user/daniel-andrade-faria/" target="_blank">Udemy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    if (body.getAttribute('data-theme') === 'dark') {
+      body.setAttribute('data-theme', 'light');
+    } else {
+      body.setAttribute('data-theme', 'dark');
+    }
+  });
+</script>
+
+</body>
+</html>
