@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
 :root {
     --bg-color: #333;
     --text-color: white;
@@ -50,6 +52,9 @@
 
   header img {
     height: 50px;
+    background-color: rgb(59, 0, 87);
+    border-radius: 50%;
+    padding: 4px;
   }
 
   header a {
@@ -69,6 +74,12 @@
     font-size: 14px;
   }
 
+  .logo{
+    font-family: "Galada", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   main {
     padding: 40px;
     text-align: center;
@@ -82,6 +93,27 @@
 
   main h1 {
     margin-bottom: 40px;
+  }
+
+  .filter {
+    text-align: center;
+    margin-bottom: 30px;
+    justify-self: right;
+  }
+  
+  .filter select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--text-color);
+  }
+
+  .filter select:focus {
+    outline: none;
+    border-color: transparent; /* Opcional: remove a borda visível */
+    box-shadow: none;          /* Opcional: remove sombras de foco */
   }
 
   .cards {
@@ -218,7 +250,21 @@
 }
 
 
+#suggestions{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 
+#suggestions h3{
+  margin-top: 36px;
+  font-weight: 100;
+}
+
+.social-theme{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 
 
 
@@ -287,3 +333,8 @@
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
 /*   darkmode    */
+
+
+
+
+
