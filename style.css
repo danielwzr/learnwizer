@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: var(--card-bg);
   }
 
@@ -129,6 +129,8 @@
     padding: 20px;
     text-align: left;
     transition: background 0.3s;
+    max-width: 600px;
+    position: relative;
   }
 
   .card img {
@@ -144,10 +146,13 @@
 
   .card p {
     font-size: 14px;
+    color: rgb(211, 211, 211);
   }
 
   .card .buttons {
     margin-top: 15px;
+  /*  display: grid;
+    grid-template-columns: 1fr 1fr; */
   }
 
   .card .buttons a {
@@ -229,7 +234,7 @@
     font-weight: bold;
   }
 
-  .curso-indisponivel{
+  .curso-indisponivel img, .curso-indisponivel h3, .curso-indisponivel p, .curso-indisponivel .buttons{
     opacity: 0.2;
   }
   
@@ -239,14 +244,18 @@
   
 .card-aviso{
   display: none;
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 8px 70px;
+  position: absolute;
+  z-index: 999;
+  rotate: -35deg;
+  left: -65px;
+  top: 50px;
 }
 
 .curso-indisponivel .card-aviso{
   display: block;
-  background-color: #007BFF;
-  opacity: 1;
+  background-color: #8d9fb4;
+  opacity: 0.7;
 }
 
 
