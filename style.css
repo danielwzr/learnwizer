@@ -1,248 +1,253 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
 :root {
-    --bg-color: #333;
-    --text-color: white;
-    --card-bg: #444;
-    --button-bg: #007BFF;
-    --button-bg-alt: #28A745;
-    --input-bg: #555;
-    --input-border: #666;
-    --button-link: rgb(174, 185, 213);
-    --copy-text-color: rgb(118, 118, 118);
-  }
-  
-  [data-theme="light"] {
-    --bg-color: #f9f9f9;
-    --text-color: #333;
-    --card-bg: #fff;
-    --button-bg: #007BFF;
-    --button-bg-alt: #28A745;
-    --input-bg: #fff;
-    --input-border: #ccc;
-    --button-link: rgb(27, 59, 119);
-    --copy-text-color: rgb(155, 155, 155);
-  }
+  --bg-color: #333;
+  --text-color: white;
+  --card-bg: #444;
+  --button-bg: #007BFF;
+  --button-bg-alt: #28A745;
+  --input-bg: #555;
+  --input-border: #666;
+  --button-link: rgb(174, 185, 213);
+  --copy-text-color: rgb(118, 118, 118);
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
-  }
+[data-theme="light"] {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --card-bg: #fff;
+  --button-bg: #007BFF;
+  --button-bg-alt: #28A745;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --button-link: rgb(27, 59, 119);
+  --copy-text-color: rgb(155, 155, 155);
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: var(--card-bg);
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  header .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--card-bg);
+}
 
-  header img {
-    height: 50px;
-    background-color: rgb(59, 0, 87);
-    border-radius: 50%;
-    padding: 4px;
-  }
+header .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  header a {
-    color: var(--button-link);
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-  }
+header img {
+  height: 50px;
+  background-color: rgb(59, 0, 87);
+  border-radius: 50%;
+  padding: 4px;
+}
 
-  header button {
-    background: var(--button-bg);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-  }
+header a {
+  color: var(--button-link);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
 
-  .logo{
-    font-family: "Galada", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+header button {
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
 
-  main {
-    padding: 40px;
-    text-align: center;
-  }
+.logo {
+  font-family: "Galada", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+main {
+  padding: 40px;
+  text-align: center;
+}
 
-  main h1 {
-    margin-bottom: 40px;
-  }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .filter {
-    text-align: center;
-    margin-bottom: 30px;
-    justify-self: right;
-  }
-  
-  .filter select {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid var(--input-border);
-    background: var(--input-bg);
-    color: var(--text-color);
-  }
+main h1 {
+  margin-bottom: 40px;
+}
 
-  .filter select:focus {
-    outline: none;
-    border-color: transparent; /* Opcional: remove a borda visível */
-    box-shadow: none;          /* Opcional: remove sombras de foco */
-  }
+.filter {
+  text-align: center;
+  margin-bottom: 30px;
+  justify-self: right;
+}
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
+.filter select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text-color);
+}
 
-  .card {
-    background: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 20px;
-    text-align: left;
-    transition: background 0.3s;
-    max-width: 600px;
-    position: relative;
-  }
+.filter select:focus {
+  outline: none;
+  border-color: transparent;
+  /* Opcional: remove a borda visível */
+  box-shadow: none;
+  /* Opcional: remove sombras de foco */
+}
 
-  .card img {
-    width: 100%;
-    border-radius: 8px;
-    height: 150px;
-    object-fit: cover;
-  }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
 
-  .card h3 {
-    margin: 15px 0 10px;
-  }
+.card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: left;
+  transition: background 0.3s;
+  max-width: 600px;
+  position: relative;
+}
 
-  .card p {
-    font-size: 14px;
-    color: rgb(211, 211, 211);
-  }
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
 
-  .card .buttons {
-    margin-top: 15px;
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: rgb(211, 211, 211);
+}
+
+.card .buttons {
+  margin-top: 15px;
   /*  display: grid;
     grid-template-columns: 1fr 1fr; */
-  }
+}
 
-  .card .buttons a {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    background: var(--button-bg);
-    font-size: 14px;
-  }
+.card .buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background: var(--button-bg);
+  font-size: 14px;
+}
 
-  .card .buttons a:nth-child(2) {
-    background: var(--button-bg-alt);
-  }
+.card .buttons a:nth-child(2) {
+  background: var(--button-bg-alt);
+}
 
-  .suggestions {
-    margin-top: 40px;
-  }
+.suggestions {
+  margin-top: 40px;
+}
 
-  .suggestions input {
-    padding: 10px;
-    width: 60%;
-    max-width: 400px;
-    margin-bottom: 10px;
-    border: 1px solid var(--input-border);
-    background: var(--input-bg);
-    color: var(--text-color);
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-  }
+.suggestions input {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text-color);
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
 
-  .suggestions button {
-    padding: 10px 20px;
-    border: none;
-    background: var(--button-bg);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.suggestions button {
+  padding: 10px 20px;
+  border: none;
+  background: var(--button-bg);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .suggestions p {
-    margin-top: 10px;
-    font-size: 14px;
-  }
+.suggestions p {
+  margin-top: 10px;
+  font-size: 14px;
+}
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: var(--card-bg);
-    font-size: 14px;
-  }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--card-bg);
+  font-size: 14px;
+}
 
-  footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-  .footer-social{
-    display: flex;
-    justify-content: center;
-    gap: 56px;
-    margin-bottom: 14px;
-  }
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  margin-bottom: 14px;
+}
 
-  .footer-copy{
-    color: var(--copy-text-color);
-  }
+.footer-copy {
+  color: var(--copy-text-color);
+}
 
 
-  footer a {
-    color: var(--button-link);
-    text-decoration: none;
-    font-weight: bold;
-  }
+footer a {
+  color: var(--button-link);
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  .curso-indisponivel img, .curso-indisponivel h3, .curso-indisponivel p, .curso-indisponivel .buttons{
-    opacity: 0.2;
-  }
-  
-  .curso-indisponivel a:hover{
-    cursor:not-allowed;
-  }
-  
-.card-aviso{
+.curso-indisponivel img,
+.curso-indisponivel h3,
+.curso-indisponivel p,
+.curso-indisponivel .buttons {
+  opacity: 0.2;
+}
+
+.curso-indisponivel a:hover {
+  cursor: not-allowed;
+}
+
+.card-aviso {
   display: none;
   padding: 8px 70px;
   position: absolute;
@@ -252,24 +257,24 @@
   top: 50px;
 }
 
-.curso-indisponivel .card-aviso{
+.curso-indisponivel .card-aviso {
   display: block;
   background-color: #8d9fb4;
   opacity: 0.7;
 }
 
 
-#suggestions{
+#suggestions {
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
-#suggestions h3{
+#suggestions h3 {
   margin-top: 36px;
   font-weight: 100;
 }
 
-.social-theme{
+.social-theme {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -279,71 +284,105 @@
 
 
 /* dark mode */
-  .checkbox-wrapper-54 input[type="checkbox"] {
-    visibility: hidden;
-    display: none;
-  }
+.checkbox-wrapper-54 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
 
-  .checkbox-wrapper-54 *,
-  .checkbox-wrapper-54 ::after,
-  .checkbox-wrapper-54 ::before {
-    box-sizing: border-box;
-  }
+.checkbox-wrapper-54 *,
+.checkbox-wrapper-54 ::after,
+.checkbox-wrapper-54 ::before {
+  box-sizing: border-box;
+}
 
-  /* The switch - the box around the slider */
-  .checkbox-wrapper-54 .switch {
-    --width-of-switch: 3.5em;
-    --height-of-switch: 2em;
-    /* size of sliding icon -- sun and moon */
-    --size-of-icon: 1.4em;
-    /* it is like a inline-padding of switch */
-    --slider-offset: 0.3em;
-    position: relative;
-    width: var(--width-of-switch);
-    height: var(--height-of-switch);
-    display: inline-block;
-  }
+/* The switch - the box around the slider */
+.checkbox-wrapper-54 .switch {
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+  display: inline-block;
+}
 
-  /* The slider */
-  .checkbox-wrapper-54 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #f4f4f5;
-    transition: .4s;
-    border-radius: 30px;
-  }
+/* The slider */
+.checkbox-wrapper-54 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: .4s;
+  border-radius: 30px;
+}
 
-  .checkbox-wrapper-54 .slider:before {
-    position: absolute;
-    content: "";
-    height: var(--size-of-icon,1.4em);
-    width: var(--size-of-icon,1.4em);
-    border-radius: 20px;
-    left: var(--slider-offset,0.3em);
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
-    ;
-   transition: .4s;
-  }
+.checkbox-wrapper-54 .slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  ;
+  transition: .4s;
+}
 
-  .checkbox-wrapper-54 input:checked + .slider {
-    background-color: #303136;
-  }
+.checkbox-wrapper-54 input:checked+.slider {
+  background-color: #303136;
+}
 
-  .checkbox-wrapper-54 input:checked + .slider:before {
-    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
-    background: #303136;
-    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
-    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
-  }
+.checkbox-wrapper-54 input:checked+.slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
 /*   darkmode    */
 
 
 
 
 
+@media screen and (max-width: 580px) {
+  *{
+    box-sizing: border-box;
+  }
+  .social-theme a {
+    display: none;
+  }
+  main{
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main{
+    padding: 20px;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .card .buttons a{
+    width: 100%;
+    text-align: center;
+  }
+  .card .buttons a:nth-child(2) {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  header{
+    display: none;
+  }
+}
