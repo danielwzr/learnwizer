@@ -35,7 +35,7 @@ cursos.forEach(curso =>{
           <h3>${curso.nome}</h3>
           <p>${curso.descricao}</p>
           <div class="buttons">
-            <a href="${curso.arquivoApostila}">Apostila</a>
+            <a href="apostilas/${curso.arquivoApostila}">Apostila</a>
             <a href="${curso.urlUdemy}">Acessar Curso</a>
           </div>`
   cardListHTML.appendChild(divHTML)
