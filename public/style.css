@@ -3,6 +3,7 @@
 :root {
   --bg-color: #333;
   --text-color: white;
+  --text-color2: rgb(194, 194, 194);
   --card-bg: #444;
   --button-bg: #007BFF;
   --button-bg-alt: #28A745;
@@ -15,6 +16,7 @@
 [data-theme="light"] {
   --bg-color: #f9f9f9;
   --text-color: #333;
+  --text-color2: rgb(78, 78, 78);
   --card-bg: #fff;
   --button-bg: #007BFF;
   --button-bg-alt: #28A745;
@@ -148,7 +150,7 @@ main h1 {
 
 .card p {
   font-size: 14px;
-  color: rgb(211, 211, 211);
+  color: var(--text-color2)
 }
 
 .card .buttons {
