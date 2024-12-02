@@ -58,3 +58,10 @@ cursos.forEach(curso =>{
     });
   });
 //
+
+
+//sugestao
+const inputSugestaoHTML = document.getElementById("inputSugestao")
+function enviarSugestao(){
+  inputSugestaoHTML.value != "" && alert("Obrigado pela sugestão!")
+}
