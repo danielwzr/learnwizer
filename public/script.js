@@ -25,9 +25,9 @@ hamburgerToggle.addEventListener('click', () => {
 // MONTA OS CARDS 
 const cardListHTML = document.getElementById("cards")
 
-cursos.forEach(curso =>{
+cursos.forEach(curso => {
   const divHTML = document.createElement("div")
-  divHTML.className="card"
+  divHTML.className = "card"
   divHTML.setAttribute("data-category", curso.categoria)
   divHTML.innerHTML = `
           <div class="card-aviso">Curso em desenvolvimento</div>
@@ -43,25 +43,53 @@ cursos.forEach(curso =>{
 //
 
 //FILTRO
-  const categoryFilter = document.getElementById('category-filter');
-  const cards = document.querySelectorAll('.card');
-  
-  categoryFilter.addEventListener('change', (event) => {
-    const selectedCategory = event.target.value;
-    cards.forEach(card => {
-      const category = card.getAttribute('data-category');
-      if (selectedCategory === 'all' || category === selectedCategory) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
+const categoryFilter = document.getElementById('category-filter');
+const cards = document.querySelectorAll('.card');
+
+categoryFilter.addEventListener('change', (event) => {
+  const selectedCategory = event.target.value;
+  cards.forEach(card => {
+    const category = card.getAttribute('data-category');
+    if (selectedCategory === 'all' || category === selectedCategory) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
   });
+});
 //
 
 
 //sugestao
 const inputSugestaoHTML = document.getElementById("inputSugestao")
-function enviarSugestao(){
-  inputSugestaoHTML.value != "" && alert("Obrigado pela sugestão!")
+function enviarSugestao() {
+  if (inputSugestaoHTML.value != "") {
+    //alert("Obrigado pela sugestão!")
+    const modal = document.getElementById("modal-thanks");
+    modal.classList.remove("hidden");
+    modal.classList.add("show");
+    inputSugestaoHTML.value = ""
+  }
+  else{
+    inputSugestaoHTML.classList.add("input-error");
+
+    // Remover a animação após a conclusão
+    setTimeout(() => {
+      inputSugestaoHTML.classList.remove("input-error");
+      inputSugestaoHTML.focus();
+    }, 800);
+  }
 }
+
+function fecharModal() {
+  const modal = document.getElementById("modal-thanks");
+  modal.classList.remove("show");
+  modal.classList.add("hidden");
+}
+
+document.getElementById("modal-thanks").addEventListener("click", (ev)=>{
+  if(ev.target.id == "modal-thanks"){
+    fecharModal()
+  }
+})
+//

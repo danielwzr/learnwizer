@@ -170,9 +170,18 @@ main h1 {
   font-size: 14px;
 }
 
+.card .buttons a:hover{
+  background: #2186f1;
+}
+
 .card .buttons a:nth-child(2) {
   background: var(--button-bg-alt);
 }
+
+.card .buttons a:nth-child(2):hover {
+  background: #2db44d;
+}
+
 
 .suggestions {
   margin-top: 40px;
@@ -202,6 +211,10 @@ main h1 {
 .suggestions p {
   margin-top: 10px;
   font-size: 14px;
+}
+
+.suggestions input::placeholder{
+  color: rgb(180, 180, 180)
 }
 
 footer {
@@ -352,8 +365,98 @@ footer a {
 /*   darkmode    */
 
 
+/*modal*/
+/* Estilo para o modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: var(--text-color2);
+}
+
+.modal-content button {
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover, .suggestions button:hover {
+  background: #2186f1;
+}
+
+/* Exibir o modal */
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+/*modal*/
 
 
+/* Animação de sacudir */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Classe para o shake */
+.input-error {
+  animation: shake 0.3s ease-in-out;
+  outline: 4px solid rgb(152, 1, 1) !important;
+  border-radius: 5px;
+  position: relative;
+}
+.input-error::placeholder{
+  font-weight: bold;
+}
+/* */
 
 
 
