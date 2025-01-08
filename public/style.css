@@ -505,6 +505,9 @@ footer a {
   *{
     box-sizing: border-box;
   }
+  header .container{
+    justify-content: center;
+  }
   .social-theme a {
     display: none;
   }
