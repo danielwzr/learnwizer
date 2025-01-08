@@ -9,6 +9,7 @@
   <meta name="author" content="Daniel Andrade Faria">
   <title>Learnwizer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
 </head>
 
 <body data-theme="dark">
@@ -21,14 +22,18 @@
 
 
       <div class="social-theme">
+        <!--
         <a href="https://www.udemy.com/user/daniel-andrade-faria/" target="_blank">Udemy</a>
-        <a href="https://www.youtube.com/@DanielAndrade-yh9lc" target="_blank">YouTube</a>
-        <div class="checkbox-wrapper-54">
+        <a href="https://www.youtube.com/@DanielAndrade-yh9lc" target="_blank">YouTube</a> -->
+        <a href="https://www.udemy.com/user/daniel-andrade-faria/" target="_blank"><img src="udemy.png" alt=""></a>
+        <a href="https://www.youtube.com/@DanielAndrade-yh9lc" target="_blank"><img src="youtube.png" alt=""></a>
+        <!-- <div class="checkbox-wrapper-54">
           <label class="switch">
             <input type="checkbox" id="theme-toggle" checked>
             <span class="slider"></span>
           </label>
         </div>
+        -->
       </div>
 
     </div>
@@ -40,9 +45,9 @@
         <label for="category-filter">Categoria:</label>
         <select id="category-filter">
           <option value="all">Todos</option>
-          <option value="programacao">Programação</option>
           <option value="informatica">Informática</option>
-          <option value="criptomoedas">Criptomoedas</option>
+          <option value="programacao">Programação</option>
+        <!--  <option value="criptomoedas">Criptomoedas</option> -->
         </select>
       </div>
       <!--  <h1>Conteúdo disponível</h1> -->
@@ -137,7 +142,7 @@
       <div class="suggestions">
         <input type="text" placeholder="Sugira um novo curso ou conteúdo..." id="inputSugestao">
         <button onclick="enviarSugestao()">Enviar</button>
-        <h3><i>"Uma boa educação é sinônimo de evolução."</i></h3>
+       <!-- <h3><i>"Uma boa educação é sinônimo de evolução."</i></h3> -->
       </div>
     </section>
   </main>
@@ -157,11 +162,15 @@
 
   <footer>
     <div class="container">
-      <div class="footer-social">
-        <a href="https://www.udemy.com/user/daniel-andrade-faria/" target="_blank">Udemy</a> <span
-          class="footer-copy">|</span>
-        <a href="https://www.youtube.com/@DanielAndrade-yh9lc" target="_blank">YouTube</a>
+    <!--  <div class="footer-social">
+        <a href="https://www.udemy.com/user/daniel-andrade-faria/" target="_blank"><img src="udemy.png" alt=""></a>
+        <span class="footer-copy">|</span>
+        <a href="https://www.youtube.com/@DanielAndrade-yh9lc" target="_blank"><img src="youtube.png" alt=""></a>
+        
+         <a href="https://www.udemy.com/user/daniel-andrade-faria/" target="_blank">Udemy</a> 
+        <a href="https://www.youtube.com/@DanielAndrade-yh9lc" target="_blank">YouTube</a> 
       </div>
+    -->
       <div class="footer-copy">Learnwizer © 2025</div>
     </div>
   </footer>
@@ -171,7 +180,7 @@
     <div class="modal-content">
       <h2>Obrigado pela sua sugestão!</h2>
       <p>A sua contribuição é muito importante.</p>
-     <!-- <p>A sua contribuição é muito importante para nós e ajuda a melhorar nossos cursos.</p> -->
+      <!-- <p>A sua contribuição é muito importante para nós e ajuda a melhorar nossos cursos.</p> -->
       <button onclick="fecharModal()">Fechar</button>
     </div>
   </div>
