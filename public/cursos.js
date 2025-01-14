@@ -1,8 +1,8 @@
 const cursos = [
     {
         id: 1,
-        nome: "Informática Básica",
-        descricao: "Aprenda o básico de informática para uso pessoal e profissional.",
+        nome: "Informática Essencial",
+        descricao: "Aprenda os principais recursos dos computadores para uso pessoal e profissional.",
         cargaHoraria: 4,
         categoria: "informatica",
         urlImagem: "https://www.cursosrapidosgratis.com.br/img_cursos/prod/img_1230x644/informatica/informatica-basica.jpg",
@@ -12,8 +12,8 @@ const cursos = [
     },
     {
         id: 2,
-        nome: "Excel Básico",
-        descricao: "Crie planilhas utilizando funções, formatando dados, gerando gráficos e automações para produtividade",
+        nome: "Excel Essencial",
+        descricao: "Crie planilhas utilizando funções, formatando dados, gerando gráficos e automações para produtividade.",
         cargaHoraria: 5,
         categoria: "informatica",
         urlImagem: "https://genyo.com.br/wp-content/uploads/2024/04/controle-de-ponto-excel-768x474.jpg",
