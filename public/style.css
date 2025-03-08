@@ -34,6 +34,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+  position: relative;
 }
 
 main{
@@ -57,11 +58,14 @@ header .container {
   align-items: center;
 }
 
-header img {
-  height: 26px;
-/*   background-color: rgb(59, 0, 87);
-  border-radius: 50%;
-  padding: 4px;  */
+
+
+.social-theme img{
+  max-width: 60px;
+}
+
+.linkedin{
+  max-width: 82px !important;
 }
 
 header a {
@@ -508,8 +512,11 @@ footer a {
   header .container{
     justify-content: center;
   }
-  .social-theme a {
-    display: none;
+  .social-theme {
+    position: absolute;
+    bottom: 90px;
+    margin: 0 auto;
+    z-index: 999;
   }
   main{
     padding: 20px;
@@ -530,6 +537,9 @@ footer a {
   }
   .card .buttons a:nth-child(2) {
     margin-top: 8px;
+  }
+  .youtube{
+    display: none;
   }
 }
 
