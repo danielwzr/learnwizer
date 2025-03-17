@@ -5,7 +5,7 @@ const cursos = [
         descricao: "Aprenda os principais recursos dos computadores para uso pessoal e profissional.",
         cargaHoraria: 4,
         categoria: "informatica",
-        urlImagem: "https://www.cursosrapidosgratis.com.br/img_cursos/prod/img_1230x644/informatica/informatica-basica.jpg",
+        urlImagem: "excel.webp",
         urlUdemy: "https://www.udemy.com/course/informatica-2024/?referralCode=93D830891F90E697924F",
         arquivoApostila: "Apostila Informatica Basica.pdf",
         disponivel: true
@@ -16,7 +16,7 @@ const cursos = [
         descricao: "Crie planilhas utilizando funções, formatando dados, gerando gráficos e automações para produtividade.",
         cargaHoraria: 5,
         categoria: "informatica",
-        urlImagem: "https://genyo.com.br/wp-content/uploads/2024/04/controle-de-ponto-excel-768x474.jpg",
+        urlImagem: "informatica.jpg",
         urlUdemy: "https://www.udemy.com/course/curso-excel-completo-especialista/?referralCode=709706002653821AE66A",
         arquivoApostila: "Apostila Excel.pdf",
         disponivel: true
